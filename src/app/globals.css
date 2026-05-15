@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-ink: 23 33 29;
+  --color-moss: 111 127 99;
+  --color-sage: 223 231 218;
+  --color-clay: 189 124 85;
+  --color-linen: 248 244 236;
+  --color-tile-face: 255 250 240;
+  --color-tile-side: 197 170 129;
+  --color-panel: 255 255 255;
+  --tile-pattern: radial-gradient(circle at 20% 18%, rgb(var(--color-clay) / 0.14), transparent 18%),
+    linear-gradient(135deg, rgb(var(--color-tile-face)), rgb(var(--color-sage) / 0.42));
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-ink: 18 27 31;
+  --color-moss: 72 112 105;
+  --color-sage: 220 232 228;
+  --color-clay: 42 126 133;
+  --color-linen: 246 249 248;
+  --color-tile-face: 255 255 255;
+  --color-tile-side: 187 207 205;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-ink: 235 241 238;
+  --color-moss: 140 177 157;
+  --color-sage: 45 59 55;
+  --color-clay: 222 158 101;
+  --color-linen: 15 20 22;
+  --color-tile-face: 37 45 47;
+  --color-tile-side: 20 28 31;
+  --color-panel: 28 36 38;
+}
+
+:root[data-theme="kazakh"] {
+  color-scheme: light;
+  --color-ink: 18 42 48;
+  --color-moss: 0 113 122;
+  --color-sage: 210 235 232;
+  --color-clay: 196 132 36;
+  --color-linen: 242 247 242;
+  --color-tile-face: 252 249 232;
+  --color-tile-side: 191 161 91;
+  --tile-pattern: radial-gradient(circle at 18% 22%, rgb(0 113 122 / 0.16), transparent 17%),
+    radial-gradient(circle at 82% 78%, rgb(196 132 36 / 0.18), transparent 18%),
+    linear-gradient(135deg, rgb(var(--color-tile-face)), rgb(210 235 232 / 0.72));
+}
+
+:root[data-theme="minimal"] {
+  color-scheme: light;
+  --color-ink: 25 25 25;
+  --color-moss: 86 86 86;
+  --color-sage: 229 229 229;
+  --color-clay: 10 92 110;
+  --color-linen: 250 250 250;
+  --color-tile-face: 255 255 255;
+  --color-tile-side: 188 188 188;
+}
+
+:root[data-theme="nomad"] {
+  color-scheme: dark;
+  --color-ink: 248 232 201;
+  --color-moss: 107 142 115;
+  --color-sage: 55 48 43;
+  --color-clay: 226 151 68;
+  --color-linen: 24 22 22;
+  --color-tile-face: 52 44 38;
+  --color-tile-side: 22 18 16;
+  --color-panel: 42 36 33;
+  --tile-pattern: radial-gradient(circle at 18% 22%, rgb(226 151 68 / 0.16), transparent 18%),
+    linear-gradient(135deg, rgb(var(--color-tile-face)), rgb(55 48 43 / 0.95));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: rgb(var(--color-linen));
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background:
+    radial-gradient(circle at 12% 10%, rgb(var(--color-clay) / 0.10), transparent 30%),
+    radial-gradient(circle at 82% 0%, rgb(var(--color-moss) / 0.12), transparent 28%),
+    rgb(var(--color-linen));
+  color: rgb(var(--color-ink));
+  overflow-x: hidden;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+input,
+select,
+button {
+  color: inherit;
+}
+
+.bg-white {
+  background-color: rgb(var(--color-panel)) !important;
+}
+
+.bg-white\/45 {
+  background-color: rgb(var(--color-panel) / 0.45) !important;
+}
+
+.bg-white\/55 {
+  background-color: rgb(var(--color-panel) / 0.55) !important;
+}
+
+.bg-white\/60 {
+  background-color: rgb(var(--color-panel) / 0.60) !important;
+}
+
+.bg-white\/65 {
+  background-color: rgb(var(--color-panel) / 0.65) !important;
+}
+
+.bg-white\/70 {
+  background-color: rgb(var(--color-panel) / 0.70) !important;
+}
+
+@keyframes bonus-float {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 14px) scale(0.96);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -46px) scale(1.02);
+  }
+}
