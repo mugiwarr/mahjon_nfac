@@ -4,7 +4,7 @@ Mahjong Focus is a modern web platform for Mahjong Solitaire built around short,
 
 ## Links
 
-- Live demo: _add Vercel production URL after deployment_
+- Live demo: https://nfacmajong.vercel.app
 - GitHub repository: https://github.com/mugiwarr/mahjon_nfac
 
 ## Main Features
