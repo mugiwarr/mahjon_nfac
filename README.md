@@ -87,7 +87,3 @@ Do not commit `.env.local` or any private credentials. The app can still run in 
 ## Why It Is Valuable
 
 Most Mahjong websites stop at a static board and a restart button. Mahjong Focus turns Mahjong Solitaire into a richer product prototype with daily retention, visible progress, local competition, strategic coaching, premium customization, and a clear monetization path. It is designed as a startup-style web app rather than a one-off puzzle demo.
-
-## Screenshots
-
-Screenshots can be added to the `screenshots/` folder for final presentation materials.
